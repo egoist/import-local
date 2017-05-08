@@ -16,7 +16,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "xo && jest"
+    "test": "xo && ava"
   },
   "files": [
     "index.js",
@@ -37,32 +37,11 @@
     "resolve-cwd": "^2.0.0"
   },
   "devDependencies": {
+    "ava": "^0.19.1",
     "babel-preset-env": "^1.4.0",
     "cpy": "^5.0.0",
     "del": "^2.2.2",
     "execa": "^0.6.3",
-    "jest": "^20.0.0",
     "xo": "*"
-  },
-  "xo": {
-    "envs": [
-      "jest"
-    ]
-  },
-  "babel": {
-    "env": {
-      "test": {
-        "presets": [
-          [
-            "env",
-            {
-              "targets": {
-                "node": "current"
-              }
-            }
-          ]
-        ]
-      }
-    }
   }
 }
