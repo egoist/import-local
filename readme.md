@@ -31,4 +31,4 @@ if (localFile) {
 
 ## License
 
-MIT © [Sindre Sorhus](https://sindresorhus.com)
+MIT © [EGOIST](https://github.com/egoist) forked from [Sindre Sorhus](https://github.com/sindresorhus/import-local)
