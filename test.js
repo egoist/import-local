@@ -1,21 +1,20 @@
 import path from 'path';
-import test from 'ava';
 import execa from 'execa';
 import cpy from 'cpy';
 import del from 'del';
 
-test.before(async () => {
+beforeAll(async () => {
 	await execa('npm', ['link']);
 });
 
-test.after(async () => {
+afterAll(async () => {
 	await execa('npm', ['unlink']);
 });
 
-test('local', async t => {
+test('local', async () => {
 	await cpy(
 		['package.json', 'index.js', 'fixtures/cli.js'],
-		path.join(__dirname, 'fixtures/local/node_modules/import-local'),
+		path.join(__dirname, 'fixtures/local/node_modules/import-local-file'),
 		{parents: true}
 	);
 
@@ -23,16 +22,16 @@ test('local', async t => {
 		preferLocal: false,
 		cwd: path.join(__dirname, 'fixtures/local')
 	});
-	t.is(stdout, 'local');
+	expect(stdout).toBe('local');
 
 	await del(path.join(__dirname, 'fixtures/local/node_modules'));
 });
 
-test('global', async t => {
+test('global', async () => {
 	const {stdout} = await execa('import-local-file-fixture', {
 		preferLocal: false,
 		cwd: path.join(__dirname, 'fixtures/global')
 	});
-	t.is(stdout, '');
+	expect(stdout).toBe('');
 });
 
