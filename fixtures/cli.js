@@ -2,6 +2,7 @@
 'use strict';
 const importLocal = require('..');
 
-if (importLocal(__filename)) {
+let localFile = importLocal(__filename);
+if (localFile) {
 	console.log('local');
 }

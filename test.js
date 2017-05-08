@@ -19,7 +19,7 @@ test('local', async t => {
 		{parents: true}
 	);
 
-	const {stdout} = await execa('import-local-fixture', {
+	const {stdout} = await execa('import-local-file-fixture', {
 		preferLocal: false,
 		cwd: path.join(__dirname, 'fixtures/local')
 	});
@@ -29,7 +29,7 @@ test('local', async t => {
 });
 
 test('global', async t => {
-	const {stdout} = await execa('import-local-fixture', {
+	const {stdout} = await execa('import-local-file-fixture', {
 		preferLocal: false,
 		cwd: path.join(__dirname, 'fixtures/global')
 	});

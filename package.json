@@ -1,5 +1,5 @@
 {
-  "name": "import-local",
+  "name": "import-local-file",
   "version": "0.1.1",
   "description": "Let a globally installed package use a locally installed version of itself if available",
   "license": "MIT",
@@ -10,7 +10,7 @@
     "url": "sindresorhus.com"
   },
   "bin": {
-    "import-local-fixture": "fixtures/cli.js"
+    "import-local-file-fixture": "fixtures/cli.js"
   },
   "engines": {
     "node": ">=4"
