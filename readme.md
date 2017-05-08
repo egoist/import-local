@@ -1,6 +1,6 @@
 # import-local-file
 
-[![NPM version](https://img.shields.io/npm/v/import-local-file.svg?style=flat)](https://npmjs.com/package/import-local-file) [![NPM downloads](https://img.shields.io/npm/dm/import-local-file.svg?style=flat)](https://npmjs.com/package/import-local-file) [![CircleCI](https://circleci.com/gh/egoist/import-local-file/tree/master.svg?style=shield&circle-token=560404744e167900959a512d617a05ec5240616f)](https://circleci.com/gh/egoist/import-local-file/tree/master)  [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://github.com/egoist/donate)
+[![NPM version](https://img.shields.io/npm/v/import-local-file.svg?style=flat)](https://npmjs.com/package/import-local-file) [![NPM downloads](https://img.shields.io/npm/dm/import-local-file.svg?style=flat)](https://npmjs.com/package/import-local-file) [![CircleCI](https://circleci.com/gh/egoist/import-local-file/tree/master.svg?style=shield)](https://circleci.com/gh/egoist/import-local-file/tree/master)  [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://github.com/egoist/donate)
 
 > Let a globally installed package use a locally installed version of itself if available
 
